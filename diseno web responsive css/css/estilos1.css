@@ -1,0 +1,120 @@
+header{
+    background-color: #5b7989;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-style: italic;
+    padding: 2%;
+}
+header h3{
+    box-shadow:#02010a;
+    box-sizing: 2px;
+    color:white;
+    display: inline;
+}
+header nav{
+    float: right;
+    /* display: inline-flex; */
+}
+
+header nav a{
+    color:white;
+}
+header nav a:active{
+    font-style:normal;
+    color:blue;
+}
+header nav a:visited{
+    text-decoration-style: none;
+}
+#contenido{
+    margin-left: 15%;
+    padding: 1%;
+  }
+
+  @media screen {
+    #contenido{
+        width:900px;
+    }
+}
+@media(min-width:721px) and (max-width:900px) { /*para tablets*/
+    #contenido{
+        width:80%;
+        margin-left: 0;
+        padding: 0;
+    }
+    header{
+        padding: 2%;
+    }
+}
+@media(max-width:900px) { /*para celulares*/
+    #contenido {
+        width: 100%;
+        margin-left: 0;
+    padding: 0;
+    }
+    header{
+        padding: 6%;
+    }
+    .sectiongaleria{
+        flex-direction: column;
+        padding:1%; 
+}
+    footer{
+        flex-direction: column;
+    }
+    div [class*="desktop"]{
+        width: 100%;
+        padding: 1%;
+        margin: 1%;
+            /*flex-grow- flex-basis*/
+          }
+}
+#galeria{
+    align-content: center;
+    text-align: center;
+}
+.sectiongaleria{
+    display: flex;
+    width:100%;
+}
+figcaption{
+    text-align: center;
+    color: floralwhite;
+}
+footer{
+    display: flex;
+    background-color: #C6d5c5;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+div [class*="desktop"]{
+width: 25%;
+padding: 1%;
+    /*flex-grow- flex-basis*/
+  }
+
+  footer div h4{
+      text-align: center;
+  }
+
+body{
+    background-color: #02010a;
+}
+
+img{
+    box-shadow: 2px 2px #02010a;
+    width:90%
+}
+
+#imagen1 img{
+	-webkit-filter: blur(10px); /* Chrome, Safari, Opera */
+	filter: blur(10px);
+}
+#imagen2 img,#imagen4 img,#imagen6 img{
+	-webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+	filter: grayscale(100%);
+}
+#imagen3 img{
+	-webkit-filter: sepia(90%); /* Chrome, Safari, Opera */
+	filter: sepia(90%);
+}
